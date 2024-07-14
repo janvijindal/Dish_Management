@@ -9,7 +9,7 @@ const DishList = () => {
   useEffect(() => {
     const fetchDishes = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/dishes');
+        const response = await axios.get('https://dish-management-backend.onrender.com/api/dishes');
         setDishes(response.data);
       } catch (error) {
         console.error('Error fetching dishes:', error);
@@ -20,7 +20,7 @@ const DishList = () => {
 
   const handleToggle = async (id) => {
     try {
-      await axios.put(`http://localhost:5000/api/dishes/toggle/${id}`);
+      await axios.put(`https://dish-management-backend.onrender.com/api/dishes/toggle/${id}`);
       setDishes(prevDishes =>
         prevDishes.map(dish =>
           dish._id === id ? { ...dish, isPublished: !dish.isPublished } : dish

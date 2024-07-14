@@ -11,7 +11,7 @@ const CreateDishForm = ({ onDishCreated }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/dishes', {
+      const response = await axios.post('https://dish-management-backend.onrender.com/api/dishes', {
         dishName,
         imageUrl,
         isPublished,

@@ -1,7 +1,9 @@
 Dish Management MERN Application
+
+
 Welcome to the Dish Management MERN (MongoDB, Express.js, React, Node.js) application! This application is designed to manage and display dish information, providing a seamless experience for users to interact with and manage dishes.
 
-Features
+Features:
 CRUD Operations: Perform Create, Read, Update, and Delete operations for dishes.
 Database Integration: MongoDB Atlas is used as the database for storing dish information.
 Backend API: Node.js and Express.js provide a robust backend API to handle requests from the frontend.
@@ -19,8 +21,8 @@ Node.js
 Express.js
 MongoDB (via Mongoose)
 Folder Structure
-plaintext
-Copy code
+
+
 dish-management/
 ├── backend/          # Backend Node.js + Express.js server
 │   ├── config/       # Configuration files
